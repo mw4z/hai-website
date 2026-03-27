@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary-50: #f0fdf4;
   --color-primary-100: #dcfce7;
@@ -17,6 +19,10 @@ body {
   font-family: 'IBM Plex Sans Arabic', Tahoma, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Dark mode transitions */
+html { transition: background-color 0.2s, color 0.2s; }
+html.dark { color-scheme: dark; }
 
 /* ── Scroll-triggered animations ─────────────────────── */
 

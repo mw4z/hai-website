@@ -22,7 +22,7 @@ export default function PhoneFrame({ src, label }: { src: string; label: string 
           <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-1/3 h-1 bg-gray-600 rounded-full" />
         </div>
       </div>
-      <span className="text-sm text-gray-500 font-medium">{label}</span>
+      <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">{label}</span>
     </div>
   )
 }

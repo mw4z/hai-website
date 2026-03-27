@@ -10,8 +10,8 @@ export default function PrivacyPage() {
   return (
     <PageShell>
       <article className="max-w-3xl mx-auto px-6 py-16">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">سياسة الخصوصية</h1>
-        <p className="text-sm text-gray-400 mb-10">آخر تحديث: مارس 2026</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">سياسة الخصوصية</h1>
+        <p className="text-sm text-gray-400 dark:text-gray-500 mb-10">آخر تحديث: مارس 2026</p>
 
         <div className="prose-custom">
           <Section title="1. مقدمة">
@@ -118,8 +118,8 @@ export default function PrivacyPage() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section className="mb-8">
-      <h2 className="text-lg font-bold text-gray-900 mb-3">{title}</h2>
-      <div className="text-sm text-gray-600 leading-relaxed space-y-2 [&_ul]:list-disc [&_ul]:mr-5 [&_ul]:space-y-1 [&_h4]:font-semibold [&_h4]:text-gray-800 [&_h4]:mt-3 [&_h4]:mb-1 [&_a]:text-primary-700 [&_a]:underline">
+      <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">{title}</h2>
+      <div className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed space-y-2 [&_ul]:list-disc [&_ul]:mr-5 [&_ul]:space-y-1 [&_h4]:font-semibold [&_h4]:text-gray-800 dark:[&_h4]:text-gray-200 [&_h4]:mt-3 [&_h4]:mb-1 [&_a]:text-primary-700 dark:[&_a]:text-primary-400 [&_a]:underline">
         {children}
       </div>
     </section>

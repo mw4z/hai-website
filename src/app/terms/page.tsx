@@ -10,10 +10,10 @@ export default function TermsPage() {
   return (
     <PageShell>
       <article className="max-w-3xl mx-auto px-6 py-16">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">الشروط والأحكام</h1>
-        <p className="text-sm text-gray-400 mb-10">آخر تحديث: مارس 2026</p>
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">الشروط والأحكام</h1>
+        <p className="text-sm text-gray-400 dark:text-gray-500 mb-10">آخر تحديث: مارس 2026</p>
 
-        <div className="text-sm text-gray-600 leading-relaxed space-y-8 [&_h2]:text-lg [&_h2]:font-bold [&_h2]:text-gray-900 [&_h2]:mb-3 [&_ul]:list-disc [&_ul]:mr-5 [&_ul]:space-y-1 [&_p]:mb-2">
+        <div className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed space-y-8 [&_h2]:text-lg [&_h2]:font-bold [&_h2]:text-gray-900 dark:[&_h2]:text-white [&_h2]:mb-3 [&_ul]:list-disc [&_ul]:mr-5 [&_ul]:space-y-1 [&_p]:mb-2">
 
           <section>
             <h2>1. القبول بالشروط</h2>
