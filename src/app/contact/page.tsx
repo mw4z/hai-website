@@ -12,7 +12,10 @@ export default function ContactPage() {
     <PageShell>
       <div className="max-w-3xl mx-auto px-6 py-16">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">تواصل معنا</h1>
-        <p className="text-sm text-gray-400 mb-10">نحن هنا لمساعدتك</p>
+        <p className="text-sm text-gray-400 mb-2">نحن هنا لمساعدتك</p>
+        <p className="text-sm text-gray-500 leading-relaxed mb-10">
+          سواء كان لديك استفسار عام، مشكلة تقنية، أو طلب حذف حساب — فريق الدعم جاهز لمساعدتك.
+        </p>
 
         {/* Contact methods */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">

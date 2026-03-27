@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   },
   description: 'منصة مجتمعية لسكان الأحياء في السعودية. تواصل مع جيرانك، اطلب خدمات، بيع واشتري، واطلب مشاوير — كل شيء في حيّك.',
   metadataBase: new URL('https://hai-app.net'),
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'حي — Hai',
     description: 'منصة الحي — تواصل مع جيرانك بشكل آمن ومنظم',

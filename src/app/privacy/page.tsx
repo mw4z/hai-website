@@ -79,7 +79,7 @@ export default function PrivacyPage() {
             <ul>
               <li><strong>الوصول:</strong> يمكنك عرض بياناتك من صفحة الملف الشخصي</li>
               <li><strong>التعديل:</strong> يمكنك تعديل اسمك وبريدك وصورتك في أي وقت</li>
-              <li><strong>الحذف:</strong> يمكنك حذف حسابك من داخل التطبيق أو عبر <a href="/delete-account">صفحة حذف الحساب</a></li>
+              <li><strong>الحذف:</strong> يمكنك حذف حسابك من داخل التطبيق أو عبر <a href="/delete-account">صفحة حذف الحساب</a>. كما يمكنك إرسال طلب حذف إلى <a href="mailto:support@hai-app.net">support@hai-app.net</a></li>
               <li><strong>الإبلاغ:</strong> يمكنك الإبلاغ عن محتوى أو مستخدمين مخالفين</li>
               <li><strong>الحظر:</strong> يمكنك حظر أي مستخدم لمنعه من رؤية محتواك أو التواصل معك</li>
             </ul>
