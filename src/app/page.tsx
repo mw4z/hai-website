@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageShell from '@/components/PageShell'
 import ScrollReveal from '@/components/ScrollReveal'
-import PhoneMockup, { FeedScreen, RideScreen, ChatScreen, ProfileScreen } from '@/components/PhoneMockup'
+import PhoneFrame from '@/components/PhoneMockup'
 
 export const metadata: Metadata = {
   title: 'حي — Hai | منصة الحي',
@@ -92,16 +92,19 @@ export default function HomePage() {
       </section>
 
       {/* ═══ App Screens ═══ */}
-      <section className="max-w-5xl mx-auto px-6 py-20 text-center">
-        <div className="animate-on-scroll mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-3">من داخل التطبيق</h2>
-          <p className="text-gray-500">واجهة بسيطة وسهلة الاستخدام</p>
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 stagger">
-          <div className="animate-on-scroll"><PhoneMockup label="الرئيسية"><FeedScreen /></PhoneMockup></div>
-          <div className="animate-on-scroll"><PhoneMockup label="المشاوير"><RideScreen /></PhoneMockup></div>
-          <div className="animate-on-scroll"><PhoneMockup label="المحادثات"><ChatScreen /></PhoneMockup></div>
-          <div className="animate-on-scroll"><PhoneMockup label="الملف الشخصي"><ProfileScreen /></PhoneMockup></div>
+      <section className="py-20 overflow-hidden">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center animate-on-scroll mb-14">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">من داخل التطبيق</h2>
+            <p className="text-gray-500">واجهة بسيطة وسهلة الاستخدام</p>
+          </div>
+          <div className="flex justify-center gap-8 md:gap-14 stagger">
+            {SCREENS.map((s, i) => (
+              <div key={i} className="animate-on-scroll">
+                <PhoneFrame src={s.src} label={s.label} />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -167,6 +170,16 @@ const STEPS = [
   { title: 'سجّل برقمك', desc: 'تسجيل سريع برقم جوالك السعودي. بدون بريد إلكتروني أو كلمة مرور.' },
   { title: 'حدد حيّك', desc: 'يتم تحديد حيّك تلقائياً عبر GPS أو تختاره يدوياً.' },
   { title: 'تفاعل مع جيرانك', desc: 'انشر، تفاعل، اطلب خدمة، أو ساعد جار — وابنِ سمعتك.' },
+]
+
+/*
+ * Screenshots: Drop real app screenshots into public/screenshots/
+ * Name them: feed.png, ride.png, chat.png, profile.png, catalog.png, etc.
+ * They'll appear inside phone frames automatically.
+ */
+const SCREENS = [
+  { src: '/screenshots/feed.png', label: 'الرئيسية' },
+  { src: '/screenshots/profile.png', label: 'الملف الشخصي' },
 ]
 
 const FAQ = [
