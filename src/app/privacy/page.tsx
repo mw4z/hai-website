@@ -105,7 +105,7 @@ export default function PrivacyPage() {
           <Section title="10. تواصل معنا">
             <p>لأي استفسار حول الخصوصية:</p>
             <ul>
-              <li>البريد الإلكتروني: <a href="mailto:support@haiapp.sa">support@haiapp.sa</a></li>
+              <li>البريد الإلكتروني: <a href="mailto:support@hai-app.net">support@hai-app.net</a></li>
               <li>صفحة الدعم: <a href="/contact">تواصل معنا</a></li>
             </ul>
           </Section>

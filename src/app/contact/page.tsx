@@ -20,8 +20,8 @@ export default function ContactPage() {
             <div className="text-2xl mb-3">📧</div>
             <h3 className="font-bold text-gray-900 mb-1">البريد الإلكتروني</h3>
             <p className="text-sm text-gray-500 mb-3">للاستفسارات العامة والدعم الفني</p>
-            <a href="mailto:support@haiapp.sa" className="text-primary-700 font-semibold text-sm">
-              support@haiapp.sa
+            <a href="mailto:support@hai-app.net" className="text-primary-700 font-semibold text-sm">
+              support@hai-app.net
             </a>
           </div>
 

@@ -42,8 +42,8 @@ export default function DeleteAccountPage() {
           </p>
           <div className="bg-white rounded-xl p-4 border border-gray-200">
             <p className="text-sm text-gray-600 mb-2">أرسل بريداً إلى:</p>
-            <a href="mailto:support@haiapp.sa?subject=طلب حذف حساب&body=أرغب في حذف حسابي. رقم الجوال المسجل:" className="text-primary-700 font-bold text-base underline">
-              support@haiapp.sa
+            <a href="mailto:support@hai-app.net?subject=طلب حذف حساب&body=أرغب في حذف حسابي. رقم الجوال المسجل:" className="text-primary-700 font-bold text-base underline">
+              support@hai-app.net
             </a>
             <p className="text-xs text-gray-400 mt-2">
               يُرجى ذكر رقم الجوال المسجل في التطبيق. سنعالج طلبك خلال 48 ساعة.

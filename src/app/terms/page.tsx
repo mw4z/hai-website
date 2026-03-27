@@ -109,7 +109,7 @@ export default function TermsPage() {
             <h2>12. تواصل معنا</h2>
             <p>لأي استفسار حول هذه الشروط، يُرجى التواصل عبر:</p>
             <ul>
-              <li>البريد الإلكتروني: <a href="mailto:support@haiapp.sa" className="text-primary-700 underline">support@haiapp.sa</a></li>
+              <li>البريد الإلكتروني: <a href="mailto:support@hai-app.net" className="text-primary-700 underline">support@hai-app.net</a></li>
               <li>صفحة الدعم: <a href="/contact" className="text-primary-700 underline">تواصل معنا</a></li>
             </ul>
           </section>

@@ -37,7 +37,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold text-gray-900 mb-3">الدعم</h3>
             <ul className="space-y-2 text-sm text-gray-500">
               <li><Link href="/contact" className="hover:text-primary-700 transition-colors">تواصل معنا</Link></li>
-              <li><a href="mailto:support@haiapp.sa" className="hover:text-primary-700 transition-colors">support@haiapp.sa</a></li>
+              <li><a href="mailto:support@hai-app.net" className="hover:text-primary-700 transition-colors">support@hai-app.net</a></li>
             </ul>
           </div>
         </div>

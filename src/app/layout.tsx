@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: '%s | حي — Hai',
   },
   description: 'منصة مجتمعية لسكان الأحياء في السعودية. تواصل مع جيرانك، اطلب خدمات، بيع واشتري، واطلب مشاوير — كل شيء في حيّك.',
-  metadataBase: new URL('https://haiapp.sa'),
+  metadataBase: new URL('https://hai-app.net'),
   openGraph: {
     title: 'حي — Hai',
     description: 'منصة الحي — تواصل مع جيرانك بشكل آمن ومنظم',
