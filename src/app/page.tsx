@@ -2,6 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import PageShell from '@/components/PageShell'
 import ScrollReveal from '@/components/ScrollReveal'
+import PhoneMockup, { FeedScreen, RideScreen, ChatScreen, ProfileScreen } from '@/components/PhoneMockup'
 
 export const metadata: Metadata = {
   title: 'حي — Hai | منصة الحي',
@@ -90,23 +91,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══ Screenshots ═══ */}
+      {/* ═══ App Screens ═══ */}
       <section className="max-w-5xl mx-auto px-6 py-20 text-center">
-        <div className="animate-on-scroll mb-10">
+        <div className="animate-on-scroll mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-3">من داخل التطبيق</h2>
           <p className="text-gray-500">واجهة بسيطة وسهلة الاستخدام</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 stagger">
-          {[1,2,3,4].map(i => (
-            <div key={i} className="animate-on-scroll bg-gradient-to-b from-gray-100 to-gray-50 rounded-2xl aspect-[9/16] flex items-center justify-center border border-gray-100 hover:shadow-md transition-shadow duration-300">
-              <div className="text-center">
-                <svg className="w-8 h-8 text-gray-300 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21z" />
-                </svg>
-                <span className="text-[10px] text-gray-300">صورة {i}</span>
-              </div>
-            </div>
-          ))}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 stagger">
+          <div className="animate-on-scroll"><PhoneMockup label="الرئيسية"><FeedScreen /></PhoneMockup></div>
+          <div className="animate-on-scroll"><PhoneMockup label="المشاوير"><RideScreen /></PhoneMockup></div>
+          <div className="animate-on-scroll"><PhoneMockup label="المحادثات"><ChatScreen /></PhoneMockup></div>
+          <div className="animate-on-scroll"><PhoneMockup label="الملف الشخصي"><ProfileScreen /></PhoneMockup></div>
         </div>
       </section>
 
