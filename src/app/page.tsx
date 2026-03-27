@@ -98,7 +98,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-3">من داخل التطبيق</h2>
             <p className="text-gray-500">واجهة بسيطة وسهلة الاستخدام</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 stagger">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8 stagger">
             {SCREENS.map((s, i) => (
               <div key={i} className="animate-on-scroll">
                 <PhoneFrame src={s.src} label={s.label} />
@@ -179,8 +179,8 @@ const STEPS = [
  */
 const SCREENS = [
   { src: '/screenshots/feed.png', label: 'الرئيسية' },
-  { src: '/screenshots/ride.png', label: 'المشاوير' },
   { src: '/screenshots/chat.png', label: 'المحادثات' },
+  { src: '/screenshots/ride.png', label: 'المشاوير' },
   { src: '/screenshots/profile.png', label: 'الملف الشخصي' },
 ]
 
