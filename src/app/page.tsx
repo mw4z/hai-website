@@ -32,7 +32,7 @@ export default function HomePage() {
             </svg>
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-5 leading-tight animate-hero-delay">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-5 leading-snug animate-hero-delay">
             كل شيء في حيّك،
             <br />
             <span className="text-primary-700 dark:text-primary-400">في مكان واحد</span>
