@@ -18,7 +18,7 @@ export default function Footer() {
               <span className="text-lg font-bold text-gray-900 dark:text-white">حي — Hai</span>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-              منصة مجتمعية لسكان الأحياء. تواصل مع جيرانك بشكل آمن ومنظم.
+              منصة خدمات الأحياء. تنبيهات، خدمات، سوق محلي، ومشاوير — كل شيء في حيّك.
             </p>
           </div>
 

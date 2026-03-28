@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     default: 'حي — Hai | منصة الحي',
     template: '%s | حي — Hai',
   },
-  description: 'منصة مجتمعية لسكان الأحياء في السعودية. تواصل مع جيرانك، اطلب خدمات، بيع واشتري، واطلب مشاوير — كل شيء في حيّك.',
+  description: 'منصة خدمات الأحياء في السعودية. تنبيهات، خدمات، سوق محلي، ومشاوير — كل شيء في حيّك، منظّم وآمن.',
   metadataBase: new URL('https://hai-app.net'),
   icons: {
     icon: '/favicon.svg',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'حي — Hai',
-    description: 'منصة الحي — تواصل مع جيرانك بشكل آمن ومنظم',
+    description: 'منصة خدمات الحي — تنبيهات، خدمات، سوق محلي، ومشاوير في حيّك',
     type: 'website',
     locale: 'ar_SA',
     siteName: 'Hai',

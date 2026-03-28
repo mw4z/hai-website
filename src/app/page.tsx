@@ -6,7 +6,7 @@ import PhoneFrame from '@/components/PhoneMockup'
 
 export const metadata: Metadata = {
   title: 'حي — Hai | منصة الحي',
-  description: 'تواصل مع جيرانك، اطلب خدمات، بيع واشتري، واطلب مشاوير — كل شيء في حيّك.',
+  description: 'تنبيهات، خدمات، سوق محلي، ومشاوير — منصة واحدة تخدم حيّك بالكامل.',
 }
 
 export default function HomePage() {
@@ -33,12 +33,12 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-5 leading-tight animate-hero-delay">
-            اعرف جيرانك،
+            كل شيء في حيّك،
             <br />
-            <span className="text-primary-700 dark:text-primary-400">وخلّ جيرانك يعرفونك</span>
+            <span className="text-primary-700 dark:text-primary-400">في مكان واحد</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-hero-delay-2">
-            منصة مجتمعية لسكان الأحياء في السعودية. تنبيهات، خدمات، سوق محلي، ومشاوير — كل شيء في حيّك، منظّم وآمن.
+            تنبيهات، خدمات، سوق محلي، ومشاوير — منصة واحدة تخدم حيّك بالكامل، بشكل منظّم وآمن.
           </p>
 
           {/* Stats */}
@@ -134,8 +134,8 @@ export default function HomePage() {
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-6 text-center animate-on-scroll">
           <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-3xl p-10 md:p-14 shadow-2xl shadow-primary-600/20">
-            <h2 className="text-3xl font-bold text-white mb-4">جاهز تعرف جيرانك؟</h2>
-            <p className="text-primary-100 mb-8 text-lg">حمّل التطبيق الآن وانضم لمجتمع حيّك</p>
+            <h2 className="text-3xl font-bold text-white mb-4">جاهز تخدم حيّك؟</h2>
+            <p className="text-primary-100 mb-8 text-lg">حمّل التطبيق الآن واستفد من خدمات حيّك</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <span className="bg-white/10 text-white px-6 py-3 rounded-xl text-sm font-medium backdrop-blur-sm border border-white/20">
                 قريباً على App Store
@@ -169,7 +169,7 @@ const FEATURES = [
 const STEPS = [
   { title: 'سجّل برقمك', desc: 'تسجيل سريع برقم جوالك السعودي. بدون بريد إلكتروني أو كلمة مرور.' },
   { title: 'حدد حيّك', desc: 'يتم تحديد حيّك تلقائياً عبر GPS أو تختاره يدوياً.' },
-  { title: 'تفاعل مع جيرانك', desc: 'انشر، تفاعل، اطلب خدمة، أو ساعد جار — وابنِ سمعتك.' },
+  { title: 'استفد وساهم', desc: 'اطلب خدمة، بيع واشتري، بلّغ عن مشكلة، أو ساعد جيرانك — وابنِ سمعتك.' },
 ]
 
 /*
