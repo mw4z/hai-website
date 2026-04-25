@@ -9,11 +9,29 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <svg viewBox="0 0 192 192" className="w-8 h-8">
-                <rect width="192" height="192" rx="42" fill="#15803d"/>
-                <circle cx="96" cy="106" r="17" fill="#fff"/>
-                <circle cx="96" cy="51" r="11" fill="#fff"/>
-                <circle cx="144" cy="134" r="11" fill="#fff"/>
-                <circle cx="48" cy="134" r="11" fill="#fff"/>
+                <defs>
+                  <linearGradient id="brandFtr" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#00b894"/>
+                    <stop offset="100%" stopColor="#005c48"/>
+                  </linearGradient>
+                  <radialGradient id="glowFtr" cx="40%" cy="32%" r="58%">
+                    <stop offset="0%" stopColor="#fff" stopOpacity="0.22"/>
+                    <stop offset="60%" stopColor="#fff" stopOpacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="vigFtr" cx="82%" cy="92%" r="70%">
+                    <stop offset="0%" stopColor="#000" stopOpacity="0.22"/>
+                    <stop offset="80%" stopColor="#000" stopOpacity="0"/>
+                  </radialGradient>
+                </defs>
+                <rect width="192" height="192" rx="42" fill="url(#brandFtr)"/>
+                <rect width="192" height="192" rx="42" fill="url(#glowFtr)"/>
+                <rect width="192" height="192" rx="42" fill="url(#vigFtr)"/>
+                <circle cx="96" cy="96" r="73.5" fill="none" stroke="#fff" strokeOpacity="0.07" strokeWidth="0.8"/>
+                <circle cx="96" cy="96" r="57"   fill="none" stroke="#fff" strokeOpacity="0.24" strokeWidth="1.4"/>
+                <circle cx="96" cy="96" r="19.5" fill="#fff"/>
+                <circle cx="96"    cy="39"    r="11.25" fill="#fff"/>
+                <circle cx="145.5" cy="124.5" r="11.25" fill="#fff"/>
+                <circle cx="46.5"  cy="124.5" r="11.25" fill="#fff"/>
               </svg>
               <span className="text-lg font-bold text-gray-900 dark:text-white">حي — Hai</span>
             </div>
