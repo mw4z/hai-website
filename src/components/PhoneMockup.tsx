@@ -14,6 +14,10 @@
  */
 export default function PhoneFrame({ src, label }: { src: string; label: string }) {
   const lightSrc = src.replace(/(\.[^./]+)$/, '-light$1')
+  // Cache-bust so a stale CDN copy can't hide the latest mockup edit.
+  const v = '2026-05-07b'
+  const dark = `${src}?v=${v}`
+  const light = `${lightSrc}?v=${v}`
   return (
     <div className="flex flex-col items-center gap-3">
       <div className="relative w-full max-w-[200px] mx-auto group">
@@ -26,13 +30,13 @@ export default function PhoneFrame({ src, label }: { src: string; label: string 
           {/* Screen */}
           <div className="rounded-[25px] overflow-hidden bg-white">
             <img
-              src={lightSrc}
+              src={light}
               alt={label}
               className="phone-img-light w-full h-auto"
               loading="lazy"
             />
             <img
-              src={src}
+              src={dark}
               alt={label}
               className="phone-img-dark w-full h-auto"
               loading="lazy"
