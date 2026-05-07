@@ -28,6 +28,14 @@ body {
 html { transition: background-color 0.2s, color 0.2s; }
 html.dark { color-scheme: dark; }
 
+/* Phone mockup theme swap — light image visible in light mode, dark
+   image visible in dark mode. Raw CSS (not Tailwind's dark: variant)
+   so it doesn't depend on JIT class detection during static export. */
+.phone-img-light { display: block; }
+.phone-img-dark  { display: none; }
+html.dark .phone-img-light { display: none; }
+html.dark .phone-img-dark  { display: block; }
+
 /* ── Scroll-triggered animations ─────────────────────── */
 
 .animate-on-scroll {

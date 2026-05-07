@@ -3,8 +3,9 @@
  *
  * `src` is the dark-mode screenshot (e.g. /screenshots/feed.png). We
  * derive the light-mode path by inserting `-light` before the extension
- * (/screenshots/feed-light.png) and swap between the two using
- * Tailwind's `dark:` variant so the mockup matches the website's theme.
+ * (/screenshots/feed-light.png) and swap between the two using the
+ * .phone-img-light / .phone-img-dark rules in globals.css so the
+ * mockup matches the website's theme.
  *
  * The screenshots leave a 96px clear band at the top (where this
  * component's notch sits) and lift the in-app bottom nav 30px from the
@@ -23,19 +24,17 @@ export default function PhoneFrame({ src, label }: { src: string; label: string 
           {/* Notch */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-gray-900 rounded-b-2xl z-10" />
           {/* Screen */}
-          <div className="rounded-[25px] overflow-hidden bg-white relative">
-            {/* Light variant — visible by default, hidden in dark mode */}
+          <div className="rounded-[25px] overflow-hidden bg-white">
             <img
               src={lightSrc}
               alt={label}
-              className="w-full h-auto block dark:hidden"
+              className="phone-img-light w-full h-auto"
               loading="lazy"
             />
-            {/* Dark variant — hidden by default, visible in dark mode */}
             <img
               src={src}
               alt={label}
-              className="w-full h-auto hidden dark:block"
+              className="phone-img-dark w-full h-auto"
               loading="lazy"
             />
           </div>
