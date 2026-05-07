@@ -15,7 +15,7 @@
 export default function PhoneFrame({ src, label }: { src: string; label: string }) {
   const lightSrc = src.replace(/(\.[^./]+)$/, '-light$1')
   // Cache-bust so a stale CDN copy can't hide the latest mockup edit.
-  const v = '2026-05-07b'
+  const v = '2026-05-07c'
   const dark = `${src}?v=${v}`
   const light = `${lightSrc}?v=${v}`
   return (
