@@ -116,10 +116,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">من داخل التطبيق</h2>
             <p className="text-gray-500 dark:text-gray-400">واجهة بسيطة وسهلة الاستخدام</p>
           </div>
-          {/* 3-column layout (was 4) — see SCREENS comment for the
-              missing rides slot. Falls back to 1 column on small phones
-              so each screenshot stays readable rather than crammed. */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 max-w-3xl mx-auto stagger">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8 stagger">
             {SCREENS.map((s, i) => (
               <div key={i} className="animate-on-scroll">
                 <PhoneFrame src={s.src} label={s.label} />
@@ -207,14 +204,14 @@ const STEPS = [
  * Name them: feed.png, ride.png, chat.png, profile.png, catalog.png, etc.
  * They'll appear inside phone frames automatically.
  *
- * The rides slot is temporarily removed: we redesigned to the dark
- * WhatsApp-charcoal/teal palette and refreshed feed/chat/profile,
- * but a matching rides screenshot hasn't been captured yet. Re-add
- * once /screenshots/ride.png exists in the new palette.
+ * Note: feed/chat/profile are in the current dark/teal palette.
+ * ride.png is still the legacy light-green capture — re-shoot it
+ * from the rides screen on a current build and replace the file.
  */
 const SCREENS = [
   { src: '/screenshots/feed.png', label: 'الرئيسية' },
   { src: '/screenshots/chat.png', label: 'المحادثات' },
+  { src: '/screenshots/ride.png', label: 'المشاوير' },
   { src: '/screenshots/profile.png', label: 'الملف الشخصي' },
 ]
 
