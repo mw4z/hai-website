@@ -180,7 +180,7 @@ export default function HomePage() {
 
 const STATS = [
   { value: '3', label: 'مدن' },
-  { value: '50+', label: 'حي' },
+  { value: '+1000', label: 'حي' },
   { value: '13', label: 'فئة محتوى' },
 ]
 
