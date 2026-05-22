@@ -167,9 +167,18 @@ export default function HomePage() {
                 </svg>
                 <span>حمّل من App Store</span>
               </a>
-              <span className="bg-white/10 text-white px-6 py-3 rounded-xl text-sm font-medium backdrop-blur-sm border border-white/20">
-                قريباً على Google Play
-              </span>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.hai.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Download Hai on Google Play"
+                className="inline-flex items-center gap-2 bg-white text-gray-900 hover:bg-gray-100 transition-colors px-6 py-3 rounded-xl text-sm font-semibold shadow-lg"
+              >
+                <svg width="20" height="20" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
+                  <path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-77.5-44.5-69.1 68.1 69.1 68.1 78.9-45.4c23.4-15.4 23.4-43.3-1.4-46.3zM104.6 499 325.3 277.7l60.1 60.1L104.6 499z"/>
+                </svg>
+                <span>حمّل من Google Play</span>
+              </a>
             </div>
           </div>
         </div>
